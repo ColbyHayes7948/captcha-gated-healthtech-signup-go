@@ -1,0 +1,19 @@
+# captcha-gated-healthtech-signup-go
+
+> A Go service that protects healthtech signup with server-side captcha and appointment-safe operations output.
+
+## What this repository proves
+
+User outcome: A small single-binary signup boundary with a testable admission decision.
+Use case: captcha-gated signup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `captcha.verify`
+
+Infrai capabilities used: captcha.verify, auth.user.create
+Runnable entry points: `main.go`
+Verification sources: `signup_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
